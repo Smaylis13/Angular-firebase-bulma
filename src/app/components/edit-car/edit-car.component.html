@@ -1,0 +1,38 @@
+<div class="columns is-mobile is-centered">
+  <div class="box column is-half">
+    <h1 class="title">Add Car</h1>
+    <div class="field">
+      <label class="label">Brand</label>
+      <div class="control">
+        <input class="input" [(ngModel)]="car.brand" type="text" placeholder="brand">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Image</label>
+      <div class="control">
+        <input class="input" [(ngModel)]="car.url" type="text" placeholder="model">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Model</label>
+      <div class="control">
+        <input class="input" [(ngModel)]="car.model" type="text" placeholder="model">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Price</label>
+      <div class="control">
+        <input class="input" [(ngModel)]="car.price" type="text" placeholder="price">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Year</label>
+      <div class="control">
+        <input class="input" [(ngModel)]="car.year" type="text" placeholder="year">
+      </div>
+    </div>
+    <button class="button is-primary" (click)="saveCar()">Save</button>
+  </div>
+</div>

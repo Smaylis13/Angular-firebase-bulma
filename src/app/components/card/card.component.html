@@ -1,0 +1,23 @@
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      {{car.brand}}
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <figure class="image">
+        <img src="{{car.url}}">
+      </figure>
+      <div class="tags">
+        <span class="tag">{{car.model}}</span>
+        <span class="tag">{{car.price}}</span>
+        <span class="tag">{{car.year}}</span>
+      </div>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a (click)="EditCar()" class="card-footer-item">Edit</a>
+    <a (click)="DeleteCar()" class="card-footer-item">Delete</a>
+  </footer>
+</div>

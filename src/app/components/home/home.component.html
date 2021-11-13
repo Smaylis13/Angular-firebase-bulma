@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="field has-addons">
+  <div class="control">
+    <input class="input" type="text" [(ngModel)]="brand" placeholder="Find by brand">
+  </div>
+  <div class="control">
+    <a class="button is-info" (click)="searchByBrand()">
+      Search
+    </a>
+  </div>
+</div>
+<div class="columns is-multiline is-mobile">
+  <ng-template ngFor let-car [ngForOf]="cars">
+    <div class="column is-one-quarter">
+      <app-card [car]="car"
+                (ouDelete)="deleteCar($event)"
+                (ouEdit)="editCar($event)"
+      ></app-card>
+    </div>
+  </ng-template>
+</div>
