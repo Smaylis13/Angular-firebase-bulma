@@ -12,8 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'Add', component: EditCarComponent},
-  {path: 'Edit', component: EditCarComponent},
+  {path: ':action', component: EditCarComponent},
 ];
 
 @NgModule({

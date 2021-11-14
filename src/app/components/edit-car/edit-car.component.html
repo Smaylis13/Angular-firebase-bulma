@@ -1,38 +1,48 @@
-<div class="columns is-mobile is-centered">
-  <div class="box column is-half">
-    <h1 class="title">Add Car</h1>
-    <div class="field">
-      <label class="label">Brand</label>
-      <div class="control">
-        <input class="input" [(ngModel)]="car.brand" type="text" placeholder="brand">
+<section class="is-relative section py-20 has-background-light">
+  <div class="is-absolute is-left-0 is-bottom-0 is-right-0 has-mw-5xl has-background-white" style="height: 100%;"></div>
+  <div class="is-relative container">
+    <div class="columns is-vcentered">
+      <div class="column is-6 mb-8 mb-0-desktop">
+        <h2 class="mb-10 title is-2">{{title}}</h2>
+        <app-card [car]="car"></app-card>
+      </div>
+      <div class="column is-5">
+        <div class="box">
+          <form>
+            <div class="field">
+              <label class="label">Brand</label>
+              <div class="control">
+                <input class="input" name="marque" [(ngModel)]="car.brand" type="text" placeholder="brand">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Image</label>
+              <div class="control">
+                <input class="input" name="image" [(ngModel)]="car.url" type="text" placeholder="model">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Model</label>
+              <div class="control">
+                <input class="input" name="model" [(ngModel)]="car.model" type="text" placeholder="model">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Price</label>
+              <div class="control">
+                <input class="input" name="price" [(ngModel)]="car.price" type="text" placeholder="price">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Year</label>
+              <div class="control">
+                <input class="input" name="year" [(ngModel)]="car.year" type="text" placeholder="year">
+              </div>
+            </div>
+            <button class="button is-primary is-large is-fullwidth" (click)="saveCar()">Save</button>
+          </form>
+        </div>
       </div>
     </div>
-
-    <div class="field">
-      <label class="label">Image</label>
-      <div class="control">
-        <input class="input" [(ngModel)]="car.url" type="text" placeholder="model">
-      </div>
-    </div>
-
-    <div class="field">
-      <label class="label">Model</label>
-      <div class="control">
-        <input class="input" [(ngModel)]="car.model" type="text" placeholder="model">
-      </div>
-    </div>
-    <div class="field">
-      <label class="label">Price</label>
-      <div class="control">
-        <input class="input" [(ngModel)]="car.price" type="text" placeholder="price">
-      </div>
-    </div>
-    <div class="field">
-      <label class="label">Year</label>
-      <div class="control">
-        <input class="input" [(ngModel)]="car.year" type="text" placeholder="year">
-      </div>
-    </div>
-    <button class="button is-primary" (click)="saveCar()">Save</button>
   </div>
-</div>
+</section>

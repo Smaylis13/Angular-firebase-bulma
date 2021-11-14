@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
   }
 
   searchByBrand() {
-    this.crudService.searchByBrand(this.brand).then(cars => {
+    this.crudService.searchByBrand(this.brand.toUpperCase()).then(cars => {
       this.cars = cars;
     })
   }
