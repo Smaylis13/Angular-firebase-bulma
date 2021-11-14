@@ -1,6 +1,10 @@
 # Cars
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
+BULMA FIREBASE CRUD 
+# Youtube 
+
+https://youtu.be/Gi4n1d9PkVA
 
 ## Development server
 
